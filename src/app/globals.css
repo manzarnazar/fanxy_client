@@ -1,0 +1,378 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+:root {
+  --primary: #0085c7;
+  --primary-light: #00aff0;
+  --primary-dark: #0b3550;
+  --primary-muted: #d5f2ff;
+
+  --secondary: #c2185b;
+  --secondary-light: #e2455f;
+  --secondary-dark: #8f1044;
+
+  --accent-gold: #a87c1f;
+  --accent-gold-light: #c99a2e;
+  --accent-purple: #6a3fd0;
+  --accent-purple-light: #8a5fe0;
+
+  --background: #f6fafc;
+  --surface: #ffffff;
+  --surface-elevated: #eef6fa;
+  --border: #dbe7ee;
+
+  --text-primary: #0b1720;
+  --text-secondary: #45606d;
+  --text-muted: #7b93a0;
+  --placeholder: #a3b7c1;
+
+  --success: #2fae74;
+  --success-strong: #1f8a5a;
+  --warning: #a87c1f;
+  --warning-strong: #8a6519;
+  --danger: #c2185b;
+  --danger-strong: #8f1044;
+  --info: #0085c7;
+  --live: #ff4058;
+}
+
+[data-theme="dark"] {
+  --primary: #00aff0;
+  --primary-light: #7fd4f5;
+  --primary-dark: #0085c7;
+  --primary-muted: #0b3550;
+
+  --secondary: #e21d5b;
+  --secondary-light: #ff5b78;
+  --secondary-dark: #c2185b;
+
+  --accent-gold: #c99a2e;
+  --accent-gold-light: #f5da8f;
+  --accent-purple: #6a3fd0;
+  --accent-purple-light: #c1a3ff;
+
+  --background: #03101a;
+  --surface: #061826;
+  --surface-elevated: #06141f;
+  --border: #123a4d;
+
+  --text-primary: #eaf8ff;
+  --text-secondary: #bde5f5;
+  --text-muted: #6f96ab;
+  --placeholder: #5c7f92;
+
+  --success: #7fe6a5;
+  --success-strong: #2fae74;
+  --warning: #f5da8f;
+  --warning-strong: #c99a2e;
+  --danger: #ff5b78;
+  --danger-strong: #c2185b;
+  --info: #7fd4f5;
+  --live: #ff4058;
+}
+
+@theme inline {
+  --color-primary: var(--primary);
+  --color-primary-light: var(--primary-light);
+  --color-primary-dark: var(--primary-dark);
+  --color-primary-muted: var(--primary-muted);
+
+  --color-secondary: var(--secondary);
+  --color-secondary-light: var(--secondary-light);
+  --color-secondary-dark: var(--secondary-dark);
+
+  --color-accent-gold: var(--accent-gold);
+  --color-accent-gold-light: var(--accent-gold-light);
+  --color-accent-purple: var(--accent-purple);
+  --color-accent-purple-light: var(--accent-purple-light);
+
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-elevated: var(--surface-elevated);
+  --color-border: var(--border);
+
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+  --color-placeholder: var(--placeholder);
+
+  --color-success: var(--success);
+  --color-success-strong: var(--success-strong);
+  --color-warning: var(--warning);
+  --color-warning-strong: var(--warning-strong);
+  --color-danger: var(--danger);
+  --color-danger-strong: var(--danger-strong);
+  --color-info: var(--info);
+  --color-live: var(--live);
+
+  --font-display: var(--font-cormorant);
+  --font-sans: var(--font-jost);
+
+  --radius-xs: 10px;
+  --radius-sm: 12px;
+  --radius-md: 15px;
+  --radius-lg: 20px;
+  --radius-xl: 26px;
+
+  --shadow-sm: 0 6px 16px -8px rgba(0, 0, 0, 0.6);
+  --shadow-md: 0 16px 34px -16px rgba(0, 0, 0, 0.7);
+  --shadow-glow: 0 16px 34px -14px rgba(0, 175, 240, 0.55);
+  --shadow-card: 0 40px 90px -40px rgba(0, 0, 0, 0.85);
+  --shadow-dropdown: 0 30px 60px -24px rgba(0, 0, 0, 0.85);
+  --shadow-ring: 0 0 0 4px rgba(0, 175, 240, 0.12);
+
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 40px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-text-primary);
+  font-family: var(--font-sans), sans-serif;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--color-primary) 30%, transparent);
+  color: var(--color-text-primary);
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
+}
+
+@keyframes floatReverse {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(11px);
+  }
+}
+
+@keyframes glow {
+  0%,
+  100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.85;
+    transform: scale(1.08);
+  }
+}
+
+@keyframes rise {
+  0% {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes heartBurst {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  15% {
+    opacity: 1;
+    transform: scale(1.15);
+  }
+  30% {
+    transform: scale(0.95);
+  }
+  80% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes sweep {
+  0% {
+    transform: translateX(-140%);
+  }
+  60%,
+  100% {
+    transform: translateX(240%);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -320px 0;
+  }
+  100% {
+    background-position: 320px 0;
+  }
+}
+
+@keyframes mesh {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(3%, -4%) scale(1.08);
+  }
+}
+
+@keyframes drift {
+  0% {
+    transform: translateY(0) translateX(0);
+    opacity: 0;
+  }
+  12% {
+    opacity: 0.9;
+  }
+  88% {
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateY(-140px) translateX(20px);
+    opacity: 0;
+  }
+}
+
+@keyframes floatUp {
+  0% {
+    opacity: 0;
+    transform: translateY(0) scale(0.5) rotate(0deg);
+  }
+  15% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-260px) translateX(var(--float-dx, 0)) scale(1.2) rotate(var(--float-rot, 0deg));
+  }
+}
+
+@keyframes giftFly {
+  0% {
+    opacity: 0;
+    transform: translateY(60px) scale(0.35);
+  }
+  16% {
+    opacity: 1;
+    transform: translateY(0) scale(1.15);
+  }
+  30% {
+    transform: translateY(0) scale(0.98);
+  }
+  72% {
+    opacity: 1;
+    transform: translateY(-4px) scale(1.04);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-46px) scale(1.5);
+  }
+}
+
+@keyframes giftSpark {
+  0% {
+    opacity: 0;
+    transform: scale(0.2) translate(0, 0);
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1) translate(var(--spark-x, 0), var(--spark-y, 0));
+  }
+}
+
+@keyframes chatIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* ---- Global micro-interactions (motion-safe) ---------------------------- */
+@media (prefers-reduced-motion: no-preference) {
+  button:not(:disabled),
+  a[href] {
+    transition-property: transform, box-shadow, background-color, border-color, color, opacity;
+    transition-duration: 0.2s;
+    transition-timing-function: cubic-bezier(0.22, 0.65, 0.3, 0.9);
+  }
+
+  button:not(:disabled):active {
+    transform: scale(0.97);
+  }
+
+  /* Every modal in the app declares role="dialog" — give them all a soft pop. */
+  [role="dialog"] {
+    animation: modalPop 0.22s cubic-bezier(0.22, 0.9, 0.3, 1.05) both;
+  }
+}
+
+@keyframes modalPop {
+  from {
+    opacity: 0;
+    transform: scale(0.94) translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* Focus glow for form fields — subtle, brand-tinted, always on. */
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--color-primary) 12%, transparent);
+}
+
+@keyframes emptyFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
