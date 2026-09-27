@@ -10,8 +10,8 @@ export async function generateMetadata({
 }: StoryViewRouteParams): Promise<Metadata> {
   const { username } = await params;
   return {
-    title: `${username}'s story | yourappname`,
-    description: `Watch ${username}'s latest stories on yourappname.`,
+    title: `${username}'s story | Fanxy`,
+    description: `Watch ${username}'s latest stories on Fanxy.`,
   };
 }
 

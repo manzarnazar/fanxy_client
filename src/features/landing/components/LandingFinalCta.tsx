@@ -25,7 +25,7 @@ export function LandingFinalCta({ onGetStarted }: LandingFinalCtaProps) {
           Ready to build your community?
         </h2>
         <p className="font-sans text-[14.5px] leading-relaxed font-light text-white/70">
-          Join thousands of creators already earning on yourappname. It only
+          Join thousands of creators already earning on Fanxy. It only
           takes a minute to get started.
         </p>
         <button

@@ -21,7 +21,7 @@ export function LandingPricingPreview({
       <LandingSectionHeading
         eyebrow="Subscriber pricing"
         title="Creators set their own price"
-        description="Every creator on yourappname chooses their own subscription tiers — here's a typical example."
+        description="Every creator on Fanxy chooses their own subscription tiers — here's a typical example."
       />
 
       <div className="mx-auto mt-12 grid max-w-[980px] grid-cols-1 gap-6 sm:grid-cols-3">

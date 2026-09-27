@@ -2,7 +2,7 @@ export type ConversationFilterKey = "all" | "unread" | "pinned" | "read";
 
 /**
  * UI model for one conversation row, derived from the Firestore chatroom doc
- * plus the peer's users_yourappname directory doc. pinned/muted/archived are
+ * plus the peer's users_fanxy directory doc. pinned/muted/archived are
  * WEB-LOCAL preferences (localStorage) — the mobile app has no such flags.
  */
 export interface Conversation {

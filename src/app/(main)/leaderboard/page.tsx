@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { LeaderboardPageContent } from "@/features/leaderboard/components/LeaderboardPageContent";
 
 export const metadata: Metadata = {
-  title: "Leaderboard | yourappname",
-  description: "Top creators and top fans on yourappname.",
+  title: "Leaderboard | Fanxy",
+  description: "Top creators and top fans on Fanxy.",
 };
 
 interface LeaderboardRouteProps {

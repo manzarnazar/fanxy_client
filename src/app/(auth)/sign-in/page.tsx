@@ -4,9 +4,9 @@ import { AuthBrandingPanel } from "@/features/auth/components/AuthBrandingPanel"
 import { LoginForm } from "@/features/auth/components/LoginForm";
 
 export const metadata: Metadata = {
-  title: "Sign In | yourappname",
+  title: "Sign In | Fanxy",
   description:
-    "Sign in to your yourappname account to continue your premium experience.",
+    "Sign in to your Fanxy account to continue your premium experience.",
 };
 
 export default function SignInPage() {

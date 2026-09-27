@@ -27,7 +27,7 @@ export function SplashText() {
         transition={{ duration: 0.4, delay: 0.3, ease: "easeOut" }}
         className="bg-gradient-to-b from-white to-primary-light bg-clip-text font-display text-[26px] font-semibold text-transparent"
       >
-        yourappname
+        Fanxy
       </motion.span>
 
       <div className="mt-3 h-4 overflow-hidden">

@@ -3,8 +3,8 @@ import { getMessaging, getToken, isSupported, onMessage, type Messaging } from "
 import { app, db } from "@/lib/firebase";
 
 // Same Firestore field/collection the Flutter app uses for web pushes
-// (lib/utils/firestoreconstants.dart pushToken + users_yourappname).
-const USERS_COL = "users_yourappname";
+// (lib/utils/firestoreconstants.dart pushToken + users_fanxy).
+const USERS_COL = "users_fanxy";
 
 function buildServiceWorkerUrl(): string {
   const config = {

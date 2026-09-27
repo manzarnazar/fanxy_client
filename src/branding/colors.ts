@@ -1,5 +1,5 @@
 /**
- * Design tokens extracted from the Claude Design "yourappname splash screen" project
+ * Design tokens extracted from the Claude Design "Fanxy splash screen" project
  * (00_web_design_system.dc.html, 02_login.dc.html). Cyan is primary across every
  * surface; rose, gold and purple are reserved for accents and gradient moments.
  * Never introduce colors outside this set — regenerate from the source design instead.

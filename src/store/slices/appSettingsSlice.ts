@@ -47,7 +47,7 @@ const appSettingsSlice = createSlice({
 
 // Note the backend's swapped naming: `currency_code` holds the SYMBOL ("$"),
 // `currency` holds the ISO code ("USD") — mirrored from the Flutter app.
-export const selectAppName = (state: RootState) => state.appSettings.values.app_name ?? "yourappname";
+export const selectAppName = (state: RootState) => state.appSettings.values.app_name ?? "Fanxy";
 export const selectAppLogoUrl = (state: RootState) => state.appSettings.values.app_logo ?? null;
 export const selectCurrencySymbol = (state: RootState) => state.appSettings.values.currency_code ?? "$";
 export const selectMinWithdrawalCoin = (state: RootState) => Number(state.appSettings.values.min_withdrawal_coin) || 0;

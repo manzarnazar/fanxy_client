@@ -15,7 +15,7 @@ export function AppLogo({ size = 36, className, src }: AppLogoProps) {
   return (
     <Image
       src={src || images.logoMark}
-      alt="yourappname"
+      alt="Fanxy"
       width={size}
       height={size}
       priority

@@ -132,7 +132,7 @@ export async function POST(request: NextRequest) {
               click_action: "FLUTTER_NOTIFICATION_CLICK",
             },
             android: { priority: "high" },
-            apns: { payload: { aps: { category: "yourappname" } } },
+            apns: { payload: { aps: { category: "fanxy" } } },
             webpush: {},
           },
         }),

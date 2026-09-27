@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ChatThreadContent } from "@/features/messages/components/ChatThreadContent";
 
 export const metadata: Metadata = {
-  title: "Chat | yourappname",
+  title: "Chat | Fanxy",
 };
 
 export default async function ChatPage({

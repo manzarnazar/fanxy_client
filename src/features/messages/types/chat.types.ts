@@ -3,7 +3,7 @@
 // collections in the same Firebase project (fanxy-9d587). Do not rename
 // fields or change value types here.
 
-/** Message doc at chatrooms_yourappname/{convId}/{convId}/{timestampMs}. */
+/** Message doc at chatrooms_fanxy/{convId}/{convId}/{timestampMs}. */
 export interface FirestoreChatMessage {
   idFrom: string;
   idTo: string;
@@ -16,7 +16,7 @@ export interface FirestoreChatMessage {
   type: number;
 }
 
-/** Conversation doc at chatrooms_yourappname/{convId}. */
+/** Conversation doc at chatrooms_fanxy/{convId}. */
 export interface FirestoreConversation {
   convid: string;
   /** Exactly two Firebase Auth UIDs. */
@@ -24,7 +24,7 @@ export interface FirestoreConversation {
   lastMessage: FirestoreChatMessage | null;
 }
 
-/** User directory doc at users_yourappname/{firebaseUid} (created by the Flutter app at signup). */
+/** User directory doc at users_fanxy/{firebaseUid} (created by the Flutter app at signup). */
 export interface FirestoreChatUser {
   userid: string;
   /** Backend numeric user id, as a string. */

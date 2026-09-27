@@ -10,7 +10,7 @@ export function HomeRightSidebar({ isCreator }: HomeRightSidebarProps) {
       <div className="flex flex-col gap-4">
         {isCreator && <HomeQuickCreate />}
         <p className="px-1 font-sans text-[11px] leading-relaxed text-text-muted/70">
-          © 2026 yourappname · About · Help · Terms · Privacy
+          © 2026 Fanxy · About · Help · Terms · Privacy
         </p>
       </div>
     </aside>

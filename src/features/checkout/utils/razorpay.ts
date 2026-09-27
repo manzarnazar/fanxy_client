@@ -61,7 +61,7 @@ export async function openRazorpayCheckout(input: RazorpayPaymentInput): Promise
     const instance = new RazorpayCtor({
       key: input.publicKey,
       order_id: input.orderId,
-      name: "yourappname",
+      name: "Fanxy",
       description: input.description,
       handler: (response) => resolve({ status: "success", paymentId: response.razorpay_payment_id }),
       modal: { ondismiss: () => resolve({ status: "cancelled" }) },

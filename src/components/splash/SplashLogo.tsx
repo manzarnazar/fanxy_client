@@ -41,7 +41,7 @@ export function SplashLogo() {
       )}
       <Image
         src={images.logoMark}
-        alt="yourappname"
+        alt="Fanxy"
         width={96}
         height={96}
         priority

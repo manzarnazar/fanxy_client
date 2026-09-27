@@ -4,7 +4,7 @@ import { Loader2 } from "lucide-react";
 import { SubscribePlansContent } from "@/features/checkout/components/SubscribePlansContent";
 
 export const metadata: Metadata = {
-  title: "Subscribe | yourappname",
+  title: "Subscribe | Fanxy",
   description: "Choose a subscription plan and unlock exclusive content.",
 };
 

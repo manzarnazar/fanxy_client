@@ -16,7 +16,7 @@ export function SettingsAboutSection({
           D
         </span>
         <div className="mt-3 font-display text-xl font-semibold text-text-primary">
-          yourappname
+          Fanxy
         </div>
       </div>
 

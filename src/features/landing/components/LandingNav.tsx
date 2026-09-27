@@ -29,7 +29,7 @@ export function LandingNav({ onGetStarted }: LandingNavProps) {
       <div className="flex items-center gap-2.5">
         <AppLogo size={34} />
         <span className="font-display text-[19px] font-semibold tracking-wide text-white">
-          yourappname
+          Fanxy
         </span>
       </div>
 

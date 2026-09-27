@@ -4,8 +4,8 @@ import { Loader2 } from "lucide-react";
 import { CheckoutPageContent } from "@/features/checkout/components/CheckoutPageContent";
 
 export const metadata: Metadata = {
-  title: "Secure Checkout | yourappname",
-  description: "Complete your purchase securely on yourappname.",
+  title: "Secure Checkout | Fanxy",
+  description: "Complete your purchase securely on Fanxy.",
 };
 
 export default function PaymentPage() {

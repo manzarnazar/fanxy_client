@@ -7,11 +7,11 @@ export function LandingFooter() {
         <div className="flex items-center gap-2.5">
           <AppLogo size={28} />
           <span className="font-display text-[15px] font-semibold text-text-primary">
-            yourappname
+            Fanxy
           </span>
         </div>
         <p className="font-sans text-[12px] font-light text-text-muted">
-          © {new Date().getFullYear()} yourappname. All rights reserved.
+          © {new Date().getFullYear()} Fanxy. All rights reserved.
         </p>
       </div>
     </footer>

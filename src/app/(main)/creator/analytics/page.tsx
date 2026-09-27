@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { AnalyticsPageContent } from "@/features/creator-analytics/components/AnalyticsPageContent";
 
 export const metadata: Metadata = {
-  title: "Analytics | yourappname",
+  title: "Analytics | Fanxy",
   description:
-    "Understand your audience, revenue and creator growth on yourappname.",
+    "Understand your audience, revenue and creator growth on Fanxy.",
 };
 
 export default function AnalyticsPage() {

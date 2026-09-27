@@ -4,8 +4,8 @@ import { Loader2 } from "lucide-react";
 import { SearchPageContent } from "@/features/search/components/SearchPageContent";
 
 export const metadata: Metadata = {
-  title: "Search | yourappname",
-  description: "Discover creators and users on yourappname.",
+  title: "Search | Fanxy",
+  description: "Discover creators and users on Fanxy.",
 };
 
 export default function SearchPage() {

@@ -24,8 +24,8 @@ import { CHAT_MESSAGE_TYPE } from "@/features/messages/types/chat.types";
 // Collection names and document shapes are confirmed against the Flutter
 // app's lib/utils/firestoreconstants.dart + lib/provider/chatprovider.dart —
 // web and mobile share these exact Firestore paths in project fanxy-9d587.
-const USERS_COL = "users_yourappname";
-const CHATROOMS_COL = "chatrooms_yourappname";
+const USERS_COL = "users_fanxy";
+const CHATROOMS_COL = "chatrooms_fanxy";
 
 /**
  * Same algorithm as the Flutter app (chatpage.dart): lexicographically

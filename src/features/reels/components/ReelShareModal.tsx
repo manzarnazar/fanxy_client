@@ -21,7 +21,7 @@ export function ReelShareModal({ reel, open, onClose }: ReelShareModalProps) {
 
   if (!open) return null;
 
-  const shareText = reel.title ?? `${reel.creatorFullName} on yourappname`;
+  const shareText = reel.title ?? `${reel.creatorFullName} on Fanxy`;
 
   const shareOptions = [
     {

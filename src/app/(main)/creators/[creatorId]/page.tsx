@@ -6,9 +6,9 @@ interface CreatorProfileRouteParams {
 }
 
 export const metadata: Metadata = {
-  title: "Creator Profile | yourappname",
+  title: "Creator Profile | Fanxy",
   description:
-    "View a creator's profile, posts, and subscription plans on yourappname.",
+    "View a creator's profile, posts, and subscription plans on Fanxy.",
 };
 
 export default async function CreatorProfilePage({

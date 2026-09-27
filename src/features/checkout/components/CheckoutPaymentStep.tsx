@@ -95,7 +95,7 @@ export function CheckoutPaymentStep({
             aria-hidden="true"
           />
           You&apos;ll complete the payment in {selected.label}&apos;s secure
-          window — card details never touch yourappname.
+          window — card details never touch Fanxy.
         </p>
       )}
 

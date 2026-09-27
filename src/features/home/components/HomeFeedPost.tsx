@@ -41,7 +41,7 @@ async function handleShare(post: Post) {
     try {
       await navigator.share({
         url,
-        title: `${post.creatorFullName} on yourappname`,
+        title: `${post.creatorFullName} on Fanxy`,
       });
     } catch {
       // user cancelled the native share sheet — no action needed

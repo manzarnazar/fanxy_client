@@ -24,7 +24,7 @@ export function HomeHeroWelcome({ userName, isCreator }: HomeHeroWelcomeProps) {
           <h1 className="mt-0.5 font-display text-[34px] leading-[1.05] font-semibold text-white">
             {userName
               ? `Welcome back, ${userName}`
-              : "Discover premium creators on yourappname"}
+              : "Discover premium creators on Fanxy"}
           </h1>
           {!userName && (
             <p className="mt-2 max-w-[26rem] font-sans text-sm font-light text-[#dceefa]/75">

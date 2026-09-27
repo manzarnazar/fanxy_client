@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { LiveWatchContent } from "@/features/live/components/LiveWatchContent";
 
 export const metadata: Metadata = {
-  title: "Watch Live | yourappname",
-  description: "Watch a live stream on yourappname.",
+  title: "Watch Live | Fanxy",
+  description: "Watch a live stream on Fanxy.",
 };
 
 interface LiveWatchRouteProps {

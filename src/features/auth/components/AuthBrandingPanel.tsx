@@ -32,7 +32,7 @@ export function AuthBrandingPanel() {
         <AppLogo size={40} />
         {/* </span> */}
         <span className="bg-gradient-to-b from-white to-primary-light bg-clip-text font-display text-[27px] font-medium tracking-wide text-transparent">
-          yourappname
+          Fanxy
         </span>
       </div>
 
@@ -46,7 +46,7 @@ export function AuthBrandingPanel() {
       <h1 className="mt-5 text-pretty font-display text-[52px] leading-[1.03] font-semibold tracking-tight text-white xl:text-[62px]">
         Welcome back to
         <br />
-        yourappname
+        Fanxy
       </h1>
 
       <p className="mt-[18px] max-w-[30rem] font-sans text-[17px] leading-relaxed font-light text-[#dceefa]/80">

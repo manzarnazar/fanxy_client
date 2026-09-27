@@ -23,7 +23,7 @@ const jost = Jost({
 const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 export const metadata: Metadata = {
-  title: "yourappname",
+  title: "Fanxy",
   description: "The premium creator platform.",
   manifest: "/manifest.json",
   icons: {
